@@ -1,0 +1,92 @@
+ :root {
+    --corh1: #19420c;
+}
+
+h1 {
+    background-color: var(--corh1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body { /* vai garantir que seu código ocupe 100% da tela */ 
+    height: 100%;
+           }
+
+body {
+    
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Estilos do conteúdo principal */
+main {
+    padding: 1rem;
+}
+
+.secao1 {
+    background: #c5ffb6;
+    padding: 5rem;
+    text-align: center;
+}
+
+/* Media queries para dispositivs móveis */
+@media (max-width: 768px) 
+    nav ul li {
+        display: block;
+        margin: 0rem;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    article {
+        flex: 1 1 100%;
+    }
+
+
+img {
+    height: 300px;
+    width: 300px;
+    align-items: center;
+
+}
+
+main {
+   margin: 20px;
+   padding: 3px;
+   text-align: center;
+}
+
+h3 {
+   text-align: center;
+}
+
+#imagemcirculo {
+   border-radius: 50%;
+   border: 5px solid #19420c;
+}
+
+div {
+   display:flex;
+   align-items: center;
+}
